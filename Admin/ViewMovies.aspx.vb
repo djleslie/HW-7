@@ -1,5 +1,5 @@
 ﻿
-Partial Class Login_Login
+Partial Class ViewMovies
     Inherits System.Web.UI.Page
 
 End Class

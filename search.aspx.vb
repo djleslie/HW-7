@@ -4,13 +4,13 @@ Partial Class Default2
 
     Protected Sub tb_search_TextChanged(sender As Object, e As EventArgs) Handles tb_search.TextChanged
         Dim searchWord As String
-        searchWord = "Select * From djleslie_Movies where (MovieTitle Like '%" + tb_search.Text.ToString() + "%')"
+        searchWord = "Select * From djleslie-Movies where (MovieTitle Like '%" + tb_search.Text.ToString() + "%')"
         SearchDataSource.SelectCommand = searchWord
     End Sub
 
     Protected Sub tb_search2_TextChanged(sender As Object, e As EventArgs) Handles tb_search2.TextChanged
         Dim searchWord As String
-        searchWord = "Select * From djleslie_Movies where (MovieTitle Like '%" + tb_search2.Text.ToString() + "%')"
+        searchWord = "Select * From djleslie-Movies where (MovieTitle Like '%" + tb_search2.Text.ToString() + "%')"
         SearchDataSource.SelectCommand = searchWord
     End Sub
 

@@ -1,0 +1,60 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Daltons movies</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <div id="header">
+            <h1>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                Daltons Movies!</h1>
+            <h2>Fun movies to see with friends</h2>
+        </div>
+        <div id="menu">
+            <ul id="nav">
+                <li><a href="./Default.aspx">Home</a></li>
+                <li><a href="./ViewMovies.aspx">View Movies</a></li>
+                <li><a href="./Login.aspx">Login</a></li>
+               
+            </ul>
+        </div>
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <div id="footer">
+           &copy; 2015 MSCI:3300 - Software Design and Development
+       </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <br />
+        <p>
+            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        </p>
+    </form>
+</body>
+</html>
