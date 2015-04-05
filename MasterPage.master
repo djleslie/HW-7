@@ -14,7 +14,9 @@
     <form id="form1" runat="server">
     <div id="container">
         <div id="header">
-            <h1>Daltons Movies!</h1>
+            <h1>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                Daltons Movies!</h1>
             <h2>Fun movies to see with friends</h2>
         </div>
         <div id="menu">
@@ -48,6 +50,10 @@
         
         </asp:ContentPlaceHolder>
     </div>
+        <br />
+        <p>
+            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        </p>
     </form>
 </body>
 </html>
