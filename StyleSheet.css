@@ -45,7 +45,18 @@ li a{float: left;
      Color: #0000FF;
 }
 
-table {  margin: 0px auto;
-    width:400px;
-    height:20px;
+table {position: absolute;
+        margin: -150px 0 0 -150px;
+  left: 50%;
+  top: 50%;
+
+}
+
+#log {height: 300px;
+  width: 300px;
+  position: absolute;
+  
+  margin: -150px 0 0 -150px;
+  left: 50%;
+  top: 50%;
 }
