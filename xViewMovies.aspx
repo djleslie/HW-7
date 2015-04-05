@@ -23,7 +23,6 @@
             <UpdateParameters>
                 <asp:Parameter Name="MovieTitle" Type="String" />
                 <asp:Parameter Name="Genre" Type="String" />
-                <asp:Parameter Name="Year" Type="String" />
                 <asp:Parameter Name="Rating" Type="Int32" />
                 <asp:Parameter Name="description" Type="String" />
                 <asp:Parameter Name="MovieID" Type="Int32" />

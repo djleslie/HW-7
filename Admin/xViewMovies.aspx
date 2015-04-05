@@ -9,6 +9,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/NewMovies.aspx">New Movie</asp:HyperLink>
+        <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:djleslie-Movies %>" DeleteCommand="DELETE FROM [djleslie-Movies] WHERE [MovieID] = @MovieID" InsertCommand="INSERT INTO [djleslie-Movies] ([MovieTitle], [Genre], [Year], [Rating], [description]) VALUES (@MovieTitle, @Genre, @Year, @Rating, @description)" SelectCommand="SELECT * FROM [djleslie-Movies]" UpdateCommand="UPDATE [djleslie-Movies] SET [MovieTitle] = @MovieTitle, [Genre] = @Genre, [Year] = @Year, [Rating] = @Rating, [description] = @description WHERE [MovieID] = @MovieID">
             <DeleteParameters>
                 <asp:Parameter Name="MovieID" Type="Int32" />
@@ -29,6 +32,7 @@
                 <asp:Parameter Name="MovieID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <br />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1">
             <Columns>
                 <asp:BoundField DataField="MovieTitle" HeaderText="MovieTitle" SortExpression="MovieTitle" />
