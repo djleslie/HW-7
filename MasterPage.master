@@ -7,6 +7,10 @@
     <title>Daltons movies</title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    
+    
+   <link href="Stylesheet.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 
@@ -15,36 +19,17 @@
     <div id="container">
         <div id="header">
             <h1>
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 Daltons Movies!</h1>
             <h2>Fun movies to see with friends</h2>
         </div>
-        <div id="menu">
-            <ul id="nav">
-                
-
-               
-            </ul>
-        </div>
      
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          <div id="footer">
+     
+
+            <div id="footer">
            &copy; 2015 MSCI:3300 - Software Design and Development
+                 <div id="Date">
+            <p>Today's date is: <asp:Label ID="lblDate" runat="server" Text="Label"></asp:Label></p>
+        </div>
        </div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
@@ -52,14 +37,27 @@
     </div>
         <br />
         <p>
-            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+         
         </p>
         <div style="margin-left: 800px">
-            <asp:HyperLink ID="Login" runat="server" NavigateUrl="~/Login/Login.aspx">Login</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;
         </div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="Login0" runat="server" NavigateUrl="~/Admin/ViewMovies.aspx">Admin</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+        <br />
+        <br />
+        <br />
+      
+ <div id="nav">
+     <ul>
+       <li> <asp:HyperLink ID="Login0" runat="server" NavigateUrl="~/Admin/ViewMovies.aspx">Admin</asp:HyperLink> </li>
+          <li> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customers/ViewMovies.aspx">View Movies</asp:HyperLink> </li>
+         
+
+      </ul>
+
+
+  </div> 
+
 &nbsp;</form>
 </body>
 </html>
