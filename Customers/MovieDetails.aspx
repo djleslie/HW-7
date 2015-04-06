@@ -27,15 +27,32 @@
                 <asp:Parameter Name="MovieID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" Height="50px" Width="500px"
+            HeaderText="Movie Details"
+	        CssClass="cssdetailsview"
+              HeaderStyle-CssClass="header"
+              FieldHeaderStyle-CssClass="fieldheader"
+              ItemStyle-CssClass="item"
+              AlternatingRowStyle-CssClass="altrow"
+              CommandRowStyle-CssClass="command" 
+                AllowPaging="True"
+               PagerStyle-CssClass="pager">
+
+<AlternatingRowStyle CssClass="altrow"></AlternatingRowStyle>
+
+<CommandRowStyle CssClass="command"></CommandRowStyle>
+
+<FieldHeaderStyle CssClass="fieldheader"></FieldHeaderStyle>
             <Fields>
-                <asp:BoundField DataField="MovieID" HeaderText="MovieID" InsertVisible="False" ReadOnly="True" SortExpression="MovieID" />
+               
                 <asp:BoundField DataField="MovieTitle" HeaderText="MovieTitle" SortExpression="MovieTitle" />
                 <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
                 <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
                 <asp:BoundField DataField="Rating" HeaderText="Rating" SortExpression="Rating" />
                 <asp:BoundField DataField="description" HeaderText="description" SortExpression="description" />
             </Fields>
+
+<HeaderStyle CssClass="header"></HeaderStyle>
         </asp:DetailsView>
     </div>
 </asp:Content>

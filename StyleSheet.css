@@ -1,4 +1,4 @@
-﻿body {
+﻿body {background-color:lightgrey;
 }
 
 #footer {width: 100%;
@@ -50,9 +50,10 @@ li a{float: left;
 
 table {position: absolute;
         margin: -150px 0 0 -150px;
-  left: 50%;
-  top: 50%;
-
+  left: 28%;
+  top: 57%;
+    height: 202px;
+    width: 389px;
 }
 
 #log {height: 300px;
@@ -65,8 +66,52 @@ table {position: absolute;
 }
 
 #rightheader{position: relative;
-   top: 3px;
-   right: -700px;
+   top: 15px;
     background-image: url('images/movies.jpg');
+    float:right;
+    position:fixed;
+   right:-20x;
+   
 }
 
+#loripsum{margin:25px;
+
+}
+
+#aboutus {
+    color: blue;
+    text-align:center;
+}
+
+#NewDetailsView{margin-left:auto;
+margin-right:auto;}
+       
+#newmovie{float:left;}
+
+.Gridview1 {width:50%;border:solid 1px #525252; border-collapse:collapse; text-align:center; 
+               font-family: "Comic Sans MS"; color: #7C6F57; background-color: #F7F6F3;
+               margin-left:auto;
+margin-right:auto;
+}
+
+.cssdetailsview{font-family: "Comic Sans MS"; background-color:#F7F6F3;color: #7C6F57; border:solid 1px #525252; border-collapse:collapse; text-align:center;
+
+}
+
+.cssdetailsview .pager {background: #424242 url(./css/grd_pgr.png) repeat-x top; line-height: 80px; }
+.cssdetailsview .pager td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }  
+.cssdetailsview .pager a:hover { color: #000; text-decoration: underline; }   
+
+
+#DefaultImage{
+  position: absolute;
+  
+  margin: -250px 0 0 -250px;
+  left: 50%;
+  top: 50%;}
+
+#loginbox{  position: absolute;
+  
+  margin: -250px 0 0 -250px;
+  left: 50%;
+  top: 50%;}

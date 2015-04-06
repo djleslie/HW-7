@@ -27,7 +27,15 @@
                 <asp:Parameter Name="MovieID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1" Height="50px" Width="125px"
+            HeaderText="Movie Details"
+	        CssClass="cssdetailsview"
+              HeaderStyle-CssClass="header"
+              FieldHeaderStyle-CssClass="fieldheader"
+              ItemStyle-CssClass="item"
+              AlternatingRowStyle-CssClass="altrow"
+              CommandRowStyle-CssClass="command"
+>
             <Fields>
                 <asp:BoundField DataField="MovieID" HeaderText="MovieID" InsertVisible="False" ReadOnly="True" SortExpression="MovieID" />
                 <asp:BoundField DataField="MovieTitle" HeaderText="MovieTitle" SortExpression="MovieTitle" />

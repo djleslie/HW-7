@@ -24,7 +24,23 @@
             
         </div>
         <div id="rightheader">
-            <asp:Image ID="logo" runat="server" ImageUrl="~/images/movies.jpeg" Height="134px" />
+            <asp:Image ID="logo" runat="server" ImageUrl="~/images/movies.jpeg" Height="100px" />
+             <div id="nav">
+     <ul>
+         <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+       <li> <asp:HyperLink ID="Login0" runat="server" NavigateUrl="~/Admin/ViewMovies.aspx">Admin</asp:HyperLink> </li>
+          <li> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customers/ViewMovies.aspx">View Movies</asp:HyperLink> </li>
+         <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
+         <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Admin/xxNewMovies.aspx">Insert New Movie</asp:HyperLink></li>
+         <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/xContact.aspx">Contact Us</asp:HyperLink></li>
+
+
+        
+
+      </ul>
+
+
+  </div> 
         </div>
 
       
@@ -45,21 +61,28 @@
         <div style="margin-left: 800px">
 &nbsp;&nbsp;&nbsp;
         </div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+
+        <br />
         <br />
         <br />
         <br />
       
- <div id="nav">
-     <ul>
-       <li> <asp:HyperLink ID="Login0" runat="server" NavigateUrl="~/Admin/ViewMovies.aspx">Admin</asp:HyperLink> </li>
-          <li> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customers/ViewMovies.aspx">View Movies</asp:HyperLink> </li>
-         
-
-      </ul>
 
 
-  </div> 
+
+        
+      
+
+
+
+        
+      
+
+
+
+        
+      
+
 
 
     </form>

@@ -30,7 +30,10 @@
         </asp:SqlDataSource>
 
          <table>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="MovieID" DataSourceID="SqlDataSource1"
+            CssClass="Gridview1"
+            AlternatingRowStyle-CssClass="alt">
+
             <Columns>
                 <asp:BoundField DataField="MovieTitle" HeaderText="MovieTitle" SortExpression="MovieTitle" />
                 <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
