@@ -21,10 +21,13 @@
             <h1>
                 Daltons Movies!</h1>
             <h2>Fun movies to see with friends</h2>
+            
         </div>
-     
-     
+        <div id="rightheader">
+            <asp:Image ID="logo" runat="server" ImageUrl="~/images/movies.jpeg" Height="134px" />
+        </div>
 
+      
             <div id="footer">
            &copy; 2015 MSCI:3300 - Software Design and Development
                  <div id="Date">
@@ -58,6 +61,7 @@
 
   </div> 
 
-&nbsp;</form>
+
+    </form>
 </body>
 </html>
