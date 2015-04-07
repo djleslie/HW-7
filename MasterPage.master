@@ -33,6 +33,7 @@
          <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink></li>
          <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Admin/xxNewMovies.aspx">Insert New Movie</asp:HyperLink></li>
          <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/xContact.aspx">Contact Us</asp:HyperLink></li>
+         <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/xSearch.aspx">Search</asp:HyperLink></li>
 
 
         
@@ -66,6 +67,26 @@
         <br />
         <br />
         <br />
+      
+
+
+
+        
+      
+
+
+
+        
+      
+
+
+
+        
+      
+
+
+
+        
       
 
 

@@ -115,3 +115,22 @@ margin-right:auto;
   margin: -250px 0 0 -250px;
   left: 50%;
   top: 50%;}
+
+#searchbox{position: absolute;
+  
+  margin: -250px 0 0 -250px;
+  left: 50%;
+  top: 50%;}
+
+#searchgrid{position: absolute;
+  
+  margin: -250px 0 0 -250px;
+  left: 50%;
+  top: 80%;}
+
+.csssearch{
+    position: absolute;
+  
+  margin: -250px 0 0 -250px;
+  left: 50%;
+  top: 80%;}
